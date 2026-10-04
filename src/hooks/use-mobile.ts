@@ -3,7 +3,7 @@ import * as React from "react"
 const MOBILE_BREAKPOINT = 768
 
 export function useIsMobile() {
-  const [isMobile] = React.useState<boolean>(() =>
+  const [isMobile, setIsMobile] = React.useState<boolean>(() =>
     typeof window !== "undefined" && window.innerWidth < MOBILE_BREAKPOINT,
   )
 
