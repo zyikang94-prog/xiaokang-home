@@ -21,7 +21,7 @@ interface Props {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   editing: IInvestment | null;
-  onSubmit: (data: Omit<IMetal, 'id'>) => void;
+  onSubmit: (data: Omit<IInvestment, 'id'>) => void;
 }
 
 const TYPES = Object.keys(INVEST_TYPES);
@@ -47,7 +47,7 @@ function InvestBody({
   onClose,
 }: {
   editing: IInvestment | null;
-  onSubmit: (data: Omit<IMetal, 'id'>) => void;
+  onSubmit: (data: Omit<IInvestment, 'id'>) => void;
   onClose: () => void;
 }) {
   const [type, setType] = useState<'stock' | 'etf'>(editing?.type ?? 'stock');
