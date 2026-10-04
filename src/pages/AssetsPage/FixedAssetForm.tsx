@@ -66,6 +66,7 @@ function FixedBody({
     const v = Number(value);
     if (!Number.isFinite(c) || c < 0 || !Number.isFinite(v) || v < 0) {
       toast.error('请输入有效的成本与估值');
+      return;
     }
     onSubmit({
       type,
