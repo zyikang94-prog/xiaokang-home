@@ -155,7 +155,7 @@ function CashBody({
         )}
         <div className="grid gap-2">
           <Label htmlFor="cash-note">备注</Label>
-          <Input id="cash-note" value={note} onChange={(e) => setName(e.target.value)} />
+          <Input id="cash-note" value={note} onChange={(e) => setNote(e.target.value)} />
         </div>
         <DialogFooter>
           <Button type="button" variant="outline" onClick={onClose}>
