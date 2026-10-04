@@ -158,7 +158,7 @@ function NavigationMenuIndicator({
 export {
   NavigationMenu,
   NavigationMenuList,
-  NavigationMenuMenuItem,
+  NavigationMenuItem,
   NavigationMenuContent,
   NavigationMenuTrigger,
   NavigationMenuLink,
