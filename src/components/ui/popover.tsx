@@ -15,7 +15,7 @@ function PopoverTrigger({
   ...props
 }: React.ComponentProps<typeof PopoverPrimitive.Trigger>) {
   return (
-    <PopoverTrigger>  </PopoverTrigger>
+    <PopoverPrimitive.Trigger data-slot="popover-trigger" {...props} />
   )
 }
 
